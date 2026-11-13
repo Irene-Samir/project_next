@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore. - Discover The Beautiful World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Explore<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <a href="#destinations" class="btn btn-dark">Explore Now</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <p class="subtitle">DISCOVER THE WORLD</p>
+      <h1>Explore The<br /><span>Beautiful World</span></h1>
+      <p class="hero-desc">
+        Discover amazing places, explore different cultures and experience unforgettable journeys.
+      </p>
+      <a href="#destinations" class="btn btn-gold">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Popular Destinations Section -->
+  <section id="destinations" class="destinations-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="subtitle">YOUR NEXT ADVENTURE</p>
+        <h2>Popular Destinations</h2>
+        <p class="section-desc">Explore some of the most beautiful cities in the world.</p>
+      </div>
+
+      <!-- Destination Slider Card -->
+      <div class="slider-card">
+        <div class="card-info">
+          <span class="counter" id="slide-counter">01 / 04</span>
+          <span class="country" id="country-name">FRANCE</span>
+          <h3 class="city" id="city-name">Paris</h3>
+          <p class="city-desc" id="city-desc">
+            Paris is one of the most beautiful cities in the world, famous for its art, architecture and romantic atmosphere.
+          </p>
+
+          <div class="details-grid">
+            <div class="detail-item">
+              <h4>Continent</h4>
+              <p id="continent-name">Europe</p>
+            </div>
+            <div class="detail-item">
+              <h4>Famous Food</h4>
+              <p id="food-name">Croissant, Macarons</p>
+            </div>
+            <div class="detail-item">
+              <h4>Famous Place</h4>
+              <p id="place-name">Eiffel Tower</p>
+            </div>
+            <div class="detail-item">
+              <h4>Language</h4>
+              <p id="language-name">French</p>
+            </div>
+          </div>
+
+          <button class="btn btn-dark" id="explore-more-btn">Explore More</button>
+        </div>
+
+        <div class="card-image">
+          <img id="city-image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80" alt="Paris" />
+          <div class="image-badge">
+            <span>DESTINATION</span>
+            <strong id="badge-number">01</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="slider-controls">
+        <button class="btn btn-dark control-btn" id="prev-btn">&larr; Previous</button>
+        <div class="dots" id="dots-container">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+        <button class="btn btn-dark control-btn" id="next-btn">Next &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Banner Section -->
+  <section id="about" class="about-banner">
+    <div class="container">
+      <h2>Travel. Discover. Enjoy.</h2>
+      <p>Every destination has a story. Let's discover it together.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Explore The World. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
